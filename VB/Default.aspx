@@ -1,0 +1,23 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Default.aspx.vb" Inherits="ShowCustomTextOnEmptyDataSource._Default" %>
+
+<%@ Register Assembly="DevExpress.XtraReports.v8.2.Web, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1"
+    Namespace="DevExpress.XtraReports.Web" TagPrefix="dxxr" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <dxxr:reportviewer id="ReportViewer1" runat="server" report="<%# new ShowCustomTextOnEmptyDataSource.XtraReport1() %>"
+            reportname="ShowCustomTextOnEmptyDataSource.XtraReport1">
+<Border BorderColor="#E0E0E0" BorderStyle="Solid"></Border>
+</dxxr:reportviewer>
+    
+    </div>
+    </form>
+</body>
+</html>
